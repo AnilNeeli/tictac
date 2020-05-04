@@ -1,11 +1,11 @@
 let count=0;
+let a=null;
 function game(){
   document.turn="x";
-  document.a=null;
 
 }
 function text(square){
-if (document.a!=null){
+if (a!=null){
    player(document.turn+ "  won the game,if you want play again, restart the game :)")
 }
 else if (square.innerText==''){
