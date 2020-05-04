@@ -1,6 +1,6 @@
 let count=0;
 let a=null;
-let turn="X";
+let turn="x";
 
 
 function text(square){
