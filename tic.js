@@ -83,8 +83,8 @@ function restart(){
   for(i=1;i<10;i++){
        document.getElementById("s"+i).innerText='';
   }
-  document.a=null;
-  document.count=0;
+  a=null;
+  count=0;
   player("The game starts with X")
 
 }
