@@ -1,8 +1,7 @@
-
+let count=0;
 function game(){
   document.turn="x";
   document.a=null;
-   count=0;
 
 }
 function text(square){
