@@ -84,6 +84,7 @@ function restart(){
   }
   a=null;
   count=0;
+   turn='X';
   player("The game starts with X")
 
 }
