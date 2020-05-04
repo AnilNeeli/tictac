@@ -1,15 +1,14 @@
 let count=0;
 let a=null;
-function game(){
-  document.turn="x";
+turn="X"
 
-}
+
 function text(square){
 if (a!=null){
-   player(document.turn+ "  won the game,if you want play again, restart the game :)")
+   player(turn+ "  won the game,if you want play again, restart the game :)")
 }
 else if (square.innerText==''){
-square.innerText=document.turn;
+square.innerText=turn;
 change();
 }
 else{
@@ -19,22 +18,22 @@ else{
 
 function change(){
 count++;
-if(winner(document.turn))
+if(winner(turn))
 {
-     player("congrats  " +document.turn+ "  won the game")
+     player("congrats  " +turn+ "  won the game")
 }
 
      else if(count==9){
            player(" The game is draw")
 
      }
-     else if (document.turn=="x"){
-        document.turn="o";
-        player(document.turn+" need to play")
+     else if (turn=="x"){
+              turn="o";
+        player(turn+" need to play")
   }
   else{
-     document.turn="x";
-     player(document.turn+" need to play")
+          turn="x";
+     player(turn+" need to play")
   }
 
 
