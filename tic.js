@@ -2,7 +2,7 @@
 function game(){
   document.turn="x";
   document.a=null;
-  document.count=0;
+   count=0;
 
 }
 function text(square){
@@ -19,13 +19,13 @@ else{
 }
 
 function change(){
-document.count++;
+count++;
 if(winner(document.turn))
 {
      player("congrats  " +document.turn+ "  won the game")
 }
 
-     else if(document.count==9){
+     else if(count==9){
            player(" The game is draw")
 
      }
